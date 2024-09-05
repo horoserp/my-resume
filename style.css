@@ -1,8 +1,13 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier, monospace;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    margin-left: 2vw;
 }
 
 .row {
@@ -18,6 +23,11 @@
 .right {
     flex: 20%;
     padding-left: 1vw;
+}
+
+h1 {
+    padding-bottom: 1vh;
+    font-size: 60px;
 }
 
 h2 {
@@ -37,5 +47,17 @@ a {
 }
 
 p {
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
+}
+
+.date {
+    text-transform: uppercase;
+}
+
+.right > h2 {
+    padding-bottom: 2vh;
+}
+
+.right > ul > li {
+    padding-bottom: 3vh;
 }
