@@ -1,0 +1,40 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    margin: 3vh 1vw 0 1vw;
+}
+
+.left {
+    flex: 80%;
+    padding-right: 1vw;
+}
+
+.right {
+    flex: 20%;
+    padding-left: 1vw;
+}
+
+h2 {
+    padding: 2vh 0 1vh 0;
+    font-size: large;
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+ul {
+    padding-left: 1vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding-bottom: 1vh;
+}
