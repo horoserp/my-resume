@@ -1,5 +1,5 @@
 * {
-    font-family: Courier, monospace;
+    font-family: "Merriweather", Courier, monospace;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -7,33 +7,41 @@
 }
 
 body {
-    margin-left: 2vw;
+    margin: 2vh 2vw;
 }
 
 .row {
     display: flex;
-    margin: 3vh 1vw 0 1vw;
 }
 
 .left {
-    flex: 80%;
-    padding-right: 1vw;
+    width: 75%;
+    padding-right: 5vw;
 }
 
 .right {
-    flex: 20%;
-    padding-left: 1vw;
+    width: 25%;
+    word-wrap: break-word;
+}
+
+.right > p {
+    padding-bottom: 5vh;
+}
+
+.right > h2:last-of-type {
+    padding-top: 5vh;
 }
 
 h1 {
-    padding-bottom: 1vh;
-    font-size: 60px;
+    padding: 2vh 0 4vh 0;
+    font-size: 2.8em;
+    color: #2079C7;
 }
 
 h2 {
     padding: 2vh 0 1vh 0;
-    font-size: large;
-    color: blueviolet;
+    font-size: 1.5em;
+    color: #2079C7;
     text-transform: uppercase;
 }
 
@@ -50,8 +58,13 @@ p {
     padding-bottom: 2vh;
 }
 
+strong, em {
+    font-size: 1.2em;
+}
+
 .date {
     text-transform: uppercase;
+    display: block;
 }
 
 .right > h2 {
@@ -60,4 +73,24 @@ p {
 
 .right > ul > li {
     padding-bottom: 3vh;
+}
+
+@media print {
+
+    * {
+        font-size: 16px;
+    }
+
+    .right > p {
+        font-size: 17px;
+    }
+
+    ul {
+        padding-left: 1.2em;
+    }
+
+    em {
+        display: block;
+    }
+
 }
