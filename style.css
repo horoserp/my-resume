@@ -75,6 +75,21 @@ strong, em {
     padding-bottom: 3vh;
 }
 
+#certs {
+    margin: 0 auto;
+}
+
+#certs > li {
+    display: inline-block;
+    padding-right: 2em;
+}
+
+#certs > li::before {
+    content: "";
+    display: list-item;
+    position: absolute;
+}
+
 @media print {
 
     * {
