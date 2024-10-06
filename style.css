@@ -1,138 +1,137 @@
 * {
-    font-family: "Merriweather", Courier, monospace;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Merriweather", Courier, monospace;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 2vh 2vw;
+  margin: 2vh 2vw;
 }
 
 .row {
-    display: flex;
+  display: flex;
 }
 
 .left {
-    width: 75%;
-    padding-right: 5vw;
+  width: 75%;
+  padding-right: 5vw;
 }
 
 .right {
-    width: 25%;
-    word-wrap: break-word;
+  width: 25%;
+  word-wrap: break-word;
 }
 
 .right > p {
-    padding-bottom: 5vh;
+  padding-bottom: 5vh;
 }
 
 .right > h2:last-of-type {
-    padding-top: 5vh;
+  padding-top: 5vh;
 }
 
 h1 {
-    padding: 2vh 0 4vh 0;
-    font-size: 2.8em;
-    color: #2079C7;
+  padding: 2vh 0 4vh 0;
+  font-size: 2.8em;
+  color: #2079c7;
 }
 
 h2 {
-    padding: 2vh 0 1vh 0;
-    font-size: 1.5em;
-    color: #2079C7;
-    text-transform: uppercase;
+  padding: 2vh 0 1vh 0;
+  font-size: 1.5em;
+  color: #2079c7;
+  text-transform: uppercase;
 }
 
 ul {
-    padding-left: 1vw;
+  padding-left: 1vw;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 p {
-    padding-bottom: 2vh;
+  padding-bottom: 2vh;
 }
 
-strong, em {
-    font-size: 1.2em;
+strong,
+em {
+  font-size: 1.2em;
 }
 
 .date {
-    text-transform: uppercase;
-    display: block;
+  text-transform: uppercase;
+  display: block;
 }
 
 .right > h2 {
-    padding-bottom: 2vh;
+  padding-bottom: 2vh;
 }
 
 .right > ul > li {
-    padding-bottom: 3vh;
+  padding-bottom: 3vh;
 }
 
 #certs {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 #certs > li {
-    display: inline-block;
-    padding-right: 2em;
+  display: inline-block;
+  padding-right: 2em;
 }
 
 #certs > li::before {
-    content: "";
-    display: list-item;
-    position: absolute;
+  content: "";
+  display: list-item;
+  position: absolute;
 }
 
 /* Form */
 #form {
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: .5rem;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 #form input {
-    width: 90%;
-    margin-bottom: 1rem;
-    color: red;
+  width: 90%;
+  margin-bottom: 1rem;
+  color: red;
 }
 
 #form button {
-    grid-column: 1/4;
+  grid-column: 1/4;
 }
 
 @media print {
+  * {
+    font-size: 16px;
+  }
 
-    * {
-        font-size: 16px;
-    }
+  .right > p {
+    font-size: 17px;
+  }
 
-    .right > p {
-        font-size: 17px;
-    }
+  ul {
+    padding-left: 1.2em;
+  }
 
-    ul {
-        padding-left: 1.2em;
-    }
+  em {
+    display: block;
+  }
 
-    em {
-        display: block;
-    }
-
-    #form {
-        display: none;
-    }
-
+  #form {
+    display: none;
+  }
 }
